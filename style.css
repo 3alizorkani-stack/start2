@@ -1,0 +1,36 @@
+
+:root {
+    --primary: #c0392b; /* لون فخم للحذاء */
+    --dark: #2c3e50;
+    --light: #ecf0f1;
+}
+
+body { font-family: 'Arial', sans-serif; background: #f4f4f4; margin: 0; text-align: right; }
+.container { max-width: 900px; margin: auto; padding: 20px; }
+
+header { background: var(--dark); color: white; padding: 20px 0; text-align: center; border-bottom: 5px solid var(--primary); }
+
+.product-showcase { display: flex; flex-wrap: wrap; background: white; border-radius: 15px; overflow: hidden; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.product-image { flex: 1; min-width: 300px; background: #eee; display: flex; align-items: center; justify-content: center; position: relative; }
+.product-image img { width: 100%; height: auto; display: block; }
+.placeholder-text { position: absolute; color: #999; }
+
+.product-info { flex: 1; padding: 30px; }
+.price { font-size: 2rem; color: var(--primary); font-weight: bold; }
+.features { list-style: none; padding: 0; margin: 20px 0; }
+.features li { margin-bottom: 10px; font-size: 1.1rem; }
+
+.btn-buy { display: block; background: var(--primary); color: white; text-align: center; padding: 15px; text-decoration: none; border-radius: 5px; font-weight: bold; animation: pulse 2s infinite; }
+
+.order-section { background: white; margin-top: 30px; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.form-group { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+input, select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; }
+
+.btn-submit { width: 100%; background: #25D366; color: white; border: none; padding: 15px; font-size: 1.2rem; cursor: pointer; border-radius: 5px; font-weight: bold; }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
